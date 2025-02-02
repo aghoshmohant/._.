@@ -42,7 +42,7 @@ const Vehicle = () => {
 
     try {
       // Send registration request
-      const response = await axios.post('http://192.168.215.52:5000/api/vehicle', {
+      const response = await axios.post('http://192.168.1.6:5000/api/vehicle', {
         owner_name: ownerName,
         vehicle_type: vehicleType,
         vehicle_model: vehicleModel,

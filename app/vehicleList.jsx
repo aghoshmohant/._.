@@ -17,7 +17,7 @@ const VehicleList = () => {
     // Fetch vehicles data from the API
     const fetchVehicles = async () => {
       try {
-        const response = await axios.get('http://192.168.215.52:5000/api/vehicle');
+        const response = await axios.get('http://192.168.1.6:5000/api/vehicle');
         
         // Sort vehicles by id in descending order (latest first)
         const sortedVehicles = response.data.sort((a, b) => b.id - a.id);
